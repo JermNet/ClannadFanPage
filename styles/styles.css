@@ -1,64 +1,37 @@
-/*For the body of every webpage*/
+:root {
+	/*White smoke (white)*/
+	--text-color: #F5F5F5;
+	/*Eerie black*/
+	--stroke-color: #172121;
+}
+
 body {
 	font-family: "MS Gothic", "Times New Roman", Times, serif;
 	font-size: 22px;
 	line-height: 32px;
 	margin: 0;
 	padding: 16px;
-	/*White smoke (white)*/
-	color: #F5F5F5;
+	color: var(--text-color);
 	word-wrap: break-word !important;
-}
-
-
-/*Specific background images/text colours*/
-.oddities {
-	background-image: url("images/VisualNovelOddities/VisualNovelOdditiesBG.png");
-}
-
-.visual {
-	background-image: url("images/VisualNovelCorner/VisualNovelCornerBG.png");
-}
-
-.clannad {
-	background-image: url("images/ClannadCorner/ClannadCornerBG.png");
-	/*Eerie black*/
-	-webkit-text-stroke-color: #172121;
+	background-image: url("../images/background.png");
+	width: 70%;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	-webkit-text-stroke-color: var(--stroke-color);
 	-webkit-text-stroke-width: 1px;
 }
 
-.anime {
-	background-image: url("images/AnimeCorner/AnimeCornerBG.png");
-	/*Eerie black*/
-	color: #172121;
+ul a {
+	text-decoration: none;
+	color: inherit;
 }
 
-.fan {
-	background-image: url("images/FanCorner/FanCornerBG.png");
-}
-
-.tsukihime {
-	background-image: url("images/TsukihimeCorner/TsukihimeCornerBG.png");
-}
-
-.merchandise {
-	background-image: url("images/MerchandiseCorner/MerchandiseCornerBG.png");
-	/*Eerie black*/
-	color: #172121;
-}
-
-.manga {
-	background-image: url("images/MangaCorner/MangaCornerBG.png");
-	/*Eerie black*/
-	-webkit-text-stroke-color: #172121;
-	-webkit-text-stroke-width: 1px;
-}
-
-.vnds {
-	background-image: url("images/VndsCorner/VndsCornerBG.png");
-	/*Eerie black*/
-	-webkit-text-stroke-color: #172121;
-	-webkit-text-stroke-width: 1px;
+ul a:hover {
+	text-decoration: underline;
+	color: var(--text-color)
 }
 
 
@@ -112,7 +85,7 @@ h1 {
 
 
 /*Image styling*/
-.main img {
+img {
 	margin-top: 20px;
 }
 
@@ -144,18 +117,7 @@ h1 {
 	margin-bottom: -75px;
 }
 
-
-/*Stuff above rows of images*/
-.main {
-	width: 70%;
-	margin: auto;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-}
-
-.main p {
+p {
 	margin-bottom: 50px;
 	text-align: justify;
 }
